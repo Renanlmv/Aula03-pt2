@@ -20,7 +20,8 @@ public class Ponto {
         return calcularDist(origem);
     }
 
-    public Ponto maisProxOrigem(Ponto p1, Ponto p2) {
+    // método para imprimir o ponto mais próximo da origem
+    public static Ponto maisProxOrigem(Ponto p1, Ponto p2) {
 
         if (p2.calcDistAteOrigem() < p1.calcDistAteOrigem()) {
             return p2;
@@ -28,11 +29,10 @@ public class Ponto {
         return p1;
     }
 
+    // método para formatar o ponto
     public String formatarPonto() {
         return"(" + x + ", " + y + ")";
     }
-
-
 }
 
 
